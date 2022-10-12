@@ -166,7 +166,20 @@
  </style>
     </head>
     <body>
-
+        <script>
+            window.watsonAssistantChatOptions = {
+              integrationID: "4c071091-692c-492b-9355-85cc936ae4d2", // The ID of this integration.
+              region: "jp-tok", // The region your integration is hosted in.
+              serviceInstanceID: "ae82b095-6804-4f68-8c01-32dd4abf39fe", // The ID of your service instance.
+              onLoad: function(instance) { instance.render(); }
+            };
+            setTimeout(function(){
+              const t=document.createElement('script');
+              t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+              document.head.appendChild(t);
+            });
+          </script>
+    
         <ul>
             <li><a>News</a></li>
             <li><a href="#grad">About</a></li>
@@ -175,14 +188,14 @@
             <li id="li1"><a>PORTFOLIO</a></li>
     </ul>
     <div class="gline"><h3 class="center"  >ANEESH KUMAR<br><a id="s">STUDENT</a></h3>
-            <img class="center" src="file:///C:/Users/ANISH%20KUMAR/Desktop/IMG_2844-01.jpeg" width="200px" height="200px">
+            <img class="center" src="https://ibmprojectpet.s3.jp-tok.cloud-object-storage.appdomain.cloud/fri.webp" width="200px" height="200px">
            
     </div>
     
 <div class="png">
-        <a href="C:/Users/ANISH%20KUMAR/Desktop/download.jfif"target="_blank"> <img  src="download.jfif"width=110px height="110px"></a>
-        <a href="file:///C:/Users/ANISH%20KUMAR/Desktop/university-buildingeducation-studentcity-landscape-house-260nw-1117704410.webp"target="_blank"> <img  id="cpn" src="university-buildingeducation-studentcity-landscape-house-260nw-1117704410.webp"width=110px height="110px"></a>
-        <a href="file:///C:/Users/ANISH%20KUMAR/Desktop/nine-to-five-job-155175_1280.webp"target="_blank"><img  id="cpn" src="nine-to-five-job-155175_1280.webp"width=110px height="110px"></a>
+        <a href="C:/Users/ANISH%20KUMAR/Desktop/download.jfif"target="_blank"> <img  src="https://ibmprojectpet.s3.jp-tok.cloud-object-storage.appdomain.cloud/school.png"width=110px height="110px"></a>
+        <a href="file:///C:/Users/ANISH%20KUMAR/Desktop"target="_blank"> <img  id="cpn" src="https://ibmprojectpet.s3.jp-tok.cloud-object-storage.appdomain.cloud/ccolleg.png"width=110px height="110px"></a>
+        <a href="file:///C:/Users/ANISH%20KUMAR/Desktop/nine-to-five-job-155175_1280.webp"target="_blank"><img  id="cpn" src="https://ibmprojectpet.s3.jp-tok.cloud-object-storage.appdomain.cloud/intern.jpg"width=110px height="110px"></a>
 
         <h4 class="ptext"><strong>SCHOOL</strong><strong id="ctext">COLLEGE</strong><strong id="itext">INTERNSHIP</strong></h4>
 </div>
